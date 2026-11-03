@@ -773,3 +773,14 @@ nav[aria-label="Main navigation"] {
   height: auto;
   background: transparent;
 }
+
+/* Center the recommendation shelf and keep editorial preview rows balanced. */
+.book-pick { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.book-pick img { object-position: center bottom; }
+.book-pick .text-link { align-self: center; margin-top: auto; }
+.home-news-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px 56px; }
+.home-news-layout .home-article:not(:first-child) { border-top: 0; padding-top: 0; }
+.footer-instagram { display: inline-flex; justify-content: center; color: var(--wine); padding: 8px; margin-top: 10px; }
+.footer-instagram svg { width: 20px; height: 20px; }
+.footer-instagram:hover { opacity: .7; }
+@media(max-width:680px) { .home-news-layout { grid-template-columns: 1fr; } }
